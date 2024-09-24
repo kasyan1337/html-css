@@ -1,0 +1,30 @@
+h2 {
+    color: aqua;
+}
+
+/* all h2 */
+
+.heading_main {
+    color: red;
+}
+
+/* whole class, better than id */
+
+#id_style {
+    color: green;
+}
+
+/* one id, not recommended, id cannot be repeated on the website, would have to have 50 of them */
+
+.class_border {
+    border: 2px solid black;
+}
+
+.font_family {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 70px;
+    text-align: center;
+}
