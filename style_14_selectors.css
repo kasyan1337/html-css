@@ -1,0 +1,66 @@
+.menu__link {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.menu__link:hover {
+    color: #666;
+}
+
+.menu__link--active {
+    color: #f00;
+}
+
+.focus:focus {
+    outline: 2px solid #f00;
+}
+
+/* good for forms, it shows active cell */
+
+.list:nth-child(2n) {
+    background-color: #f0f0f0;
+}
+
+
+/* each even child will be of this color 
+2n-1 for uneven, 
+without n it will be only element 2nd one colored */
+
+.list::after {
+    content: ' | ';
+    color: #666;
+    font-size: 1.5em;
+}
+
+/* after each list element there will be | */
+
+.list::before {
+    content: ' | ';
+    color: #666;
+    font-size: 1.5em;
+}
+
+/* before each list element there will be | */
+
+.list_new::after {
+    content: ' Something added after ';
+    text-transform: uppercase;
+    color: #666;
+    font-size: 1.5em;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* box-sizing: border-box; - it will include padding and border in width and height, 
+with * I call all elements */
+
+#Top {
+    background-color: #f0f0f0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
